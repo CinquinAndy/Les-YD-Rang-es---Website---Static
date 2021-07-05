@@ -59,4 +59,9 @@ a:focus, a:hover, button:focus, button:hover {
   transition: all ease-in-out 0.2s;
 }
 
+._yd-center-justified {
+  text-align: justify;
+  text-align-last: center;
+}
+
 /*# sourceMappingURL=index.css.map */
