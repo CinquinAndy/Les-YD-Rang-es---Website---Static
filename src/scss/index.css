@@ -64,4 +64,10 @@ a:focus, a:hover, button:focus, button:hover {
   text-align-last: center;
 }
 
+._yd-gradient-textColor {
+  background: -webkit-linear-gradient(#6a11cb, #27aae7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*# sourceMappingURL=index.css.map */
