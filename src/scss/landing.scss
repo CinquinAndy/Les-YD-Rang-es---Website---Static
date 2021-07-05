@@ -187,3 +187,13 @@ h1 span {
 ._yd_quotes{
   pointer-events: none;
 }
+
+._yd_txt_around_image span{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+@for $i from 1 through 14 {
+  ._yd_txt_around_image span:nth-child(#{$i}) {
+    color: black;
+  }
+}

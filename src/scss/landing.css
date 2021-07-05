@@ -828,4 +828,65 @@ h1 span {
   pointer-events: none;
 }
 
+._yd_txt_around_image span {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+._yd_txt_around_image span:nth-child(1) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(2) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(3) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(4) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(5) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(6) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(7) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(8) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(9) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(10) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(11) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(12) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(13) {
+  color: black;
+}
+
+._yd_txt_around_image span:nth-child(14) {
+  color: black;
+}
+
 /*# sourceMappingURL=landing.css.map */
