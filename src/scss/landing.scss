@@ -184,16 +184,29 @@ h1 span {
   opacity: 1;
 }
 
-._yd_quotes{
+._yd_quotes {
   pointer-events: none;
 }
 
-._yd_txt_around_image span{
+._yd_txt_around_image span {
   font-size: 20px;
+  //font-weight: bold;
   text-transform: uppercase;
+  position: absolute;
+  height: 300px;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+  z-index: 100;
 }
-@for $i from 1 through 14 {
+
+._yd_letters_block {
+  transform: translateX(240px) translateY(-550px);
+}
+
+@for $i from 1 through 36 {
   ._yd_txt_around_image span:nth-child(#{$i}) {
-    color: black;
+    transform: rotate(50 + 360deg/72 * $i) scale(-1, -1);
   }
 }
