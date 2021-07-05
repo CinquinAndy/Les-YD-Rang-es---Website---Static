@@ -1,9 +1,128 @@
-._yd-arabesque {
+//
+//._yd_not_selected a > div::after {
+//  opacity: 1;
+//  transform: scale(0);
+//  transform-origin: center;
+//}
+//
+//._yd_not_selected a > div:hover::after,
+//._yd_not_selected a > div:focus::after {
+//  transform: scale(1);
+//}
+//
+//._yd_not_selected ._yd_logo {
+//  display: none;
+//}
+//
+//._yd-arabesque {
+//  width: 100%;
+//  height: 20px;
+//}
+//
+//._yd-arabesque svg {
+//  width: 100px;
+//  height: 100px;
+//}
+//
+//
+//._yd_top_nav li {
+//  float: none;
+//  color: black;
+//  padding: 12px 16px;
+//  text-decoration: none;
+//  display: block;
+//  text-align: center;
+//}
+
+.nav {
+  height: 55px;
   width: 100%;
-  height: 20px;
 }
 
-._yd-arabesque svg {
-  width: 100px;
-  height: 100px;
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+  position: relative;
+}
+
+//.nav > #nav-check {
+//  display: none;
+//}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fcf7f9;
+    height: 0;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  //.nav > #nav-check:not(:checked) ~ .nav-links {
+  //  height: 0;
+  //}
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 55px);
+    overflow-y: auto;
+  }
+}
+
+nav * {
+  color: #dbf4ff;
+  transition: all ease-in-out .3s;
+}
+
+nav a:hover,
+nav a:hover * {
+  color: #75d3ff;
+  fill: #75d3ff;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #75d3ff;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
 }

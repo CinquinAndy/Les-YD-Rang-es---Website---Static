@@ -28,41 +28,6 @@ nav * {
   text-transform: uppercase;
 }
 
-nav * {
-  color: #dbf4ff;
-  transition: all ease-in-out 0.3s;
-}
-
-nav a:hover,
-nav a:hover * {
-  color: #75d3ff;
-  fill: #75d3ff;
-}
-
-/* underline */
-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #75d3ff;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-}
-
-._yd_not_selected a::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
-}
-
-._yd_not_selected a:hover::after,
-._yd_not_selected a:focus::after {
-  transform: scale(1);
-}
-
 a:focus, a:hover, button:focus, button:hover {
   filter: saturate(120%) brightness(120%);
   transition: all ease-in-out 0.2s;
@@ -77,6 +42,38 @@ a:focus, a:hover, button:focus, button:hover {
   background: -webkit-linear-gradient(#6a11cb, #27aae7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 600px) {
+  ._yd_fade_invisible {
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1;
+    height: 0;
+    transition: opacity ease-in-out 0.2s, z-index ease-in-out 0.2s, height ease-in-out 0.5s;
+  }
+
+  ._yd_fade_invisible a {
+    opacity: 0;
+    z-index: -1;
+    transition: opacity ease-in-out 0.2s;
+    transition-delay: 0.5s;
+  }
+
+  ._yd_fade_visible {
+    pointer-events: auto;
+    opacity: 1;
+    z-index: 20;
+    height: 100vh;
+    transition: opacity ease-in-out 0.2s, z-index ease-in-out 0.2s, height ease-in-out 0.5s;
+  }
+
+  ._yd_fade_visible a {
+    opacity: 1;
+    z-index: 20;
+    transition: opacity ease-in-out 0.2s;
+    transition-delay: 0.5s;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
