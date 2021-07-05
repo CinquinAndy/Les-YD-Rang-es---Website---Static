@@ -4,10 +4,18 @@
 * {
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none !important;
+  text-decoration: none;
   transition: all ease-in-out .3s;
   font-family: jubilat, sans-serif;
   font-weight: 400;
+}
+
+a {
+  text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 html {
@@ -20,6 +28,7 @@ nav * {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 nav * {
@@ -69,7 +78,7 @@ a, button {
   text-align-last: center;
 }
 
-._yd-gradient-textColor{
+._yd-gradient-textColor {
   background: -webkit-linear-gradient(#6a11cb, #27aae7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
