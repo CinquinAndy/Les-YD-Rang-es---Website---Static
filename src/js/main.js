@@ -15,11 +15,10 @@ menuIcon.addEventListener("click", function () {
 window.onscroll = function () {
     scrollFunction();
 };
+
 var flag = false;
 
 function scrollFunction() {
-    console.log(document.body.scrollTop);
-    console.log(document.documentElement.scrollTop);
     if (flag === false) {
         if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
             nav.classList.toggle("scrolled");

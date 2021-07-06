@@ -39,13 +39,24 @@
         </div>
 
         <div class="relative lg:absolute nav-links lg:mr-10 lg:top-0 lg:right-0 lg:h-100px lg:flex lg:items-center">
-            <div id="navLinks" class="_yd_fade_invisible w-full flex flex-wrap flex-col justify-evenly items-center lg:block lg:w-auto lg:h-auto">
-                <a class="relative text-center uppercase m-0 mt-16 lg:mx-5 w-full lg:w-auto" href="#">accueil</a>
-                <a class="relative text-center uppercase m-0 lg:mx-5 w-full lg:w-auto" href="#">notre activité</a>
-                <a class="relative text-center uppercase m-0 lg:mx-5 w-full lg:w-auto" href="#">nos préstations</a>
-                <a class="relative text-center uppercase m-0 lg:mx-5 w-full lg:w-auto" href="#">blog</a>
-                <a class="relative text-center uppercase m-0 lg:mx-5 w-full lg:w-auto" href="#">contact</a>
-            </div>
+            <ul id="navLinks"
+                class="_yd_fade_invisible w-full flex flex-wrap flex-col justify-evenly items-center lg:block lg:w-auto lg:h-auto">
+                <li class="_yd_active_parent w-full flex justify-center lg:inline">
+                    <a class="_yd_active relative text-center uppercase m-0 mt-16 lg:mx-5" href="#">accueil</a>
+                </li>
+                <li class="w-full flex justify-center lg:inline">
+                    <a class="_yd_not_active relative text-center uppercase m-0 lg:mx-5" href="#">notre activité</a>
+                </li>
+                <li class="w-full flex justify-center lg:inline">
+                    <a class="_yd_not_active relative text-center uppercase m-0 lg:mx-5" href="#">nos préstations</a>
+                </li>
+                <li class="w-full flex justify-center lg:inline">
+                    <a class="_yd_not_active relative text-center uppercase m-0 lg:mx-5" href="#">blog</a>
+                </li>
+                <li class="w-full flex justify-center lg:inline">
+                    <a class="_yd_not_active relative text-center uppercase m-0 lg:mx-5" href="#">contact</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
