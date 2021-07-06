@@ -209,3 +209,10 @@ h1 span {
     transform: rotate(50 + 360deg/72 * $i) scale(-1, -1);
   }
 }
+
+@media screen and (max-width: 600px){
+  #_yd_btn_media{
+    transform-origin: center center;
+    transform: scale(0.8);
+  }
+}

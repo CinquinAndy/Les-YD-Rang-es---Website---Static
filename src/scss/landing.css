@@ -988,4 +988,11 @@ h1 span {
   transform: rotate(230deg) scale(-1, -1);
 }
 
+@media screen and (max-width: 600px) {
+  #_yd_btn_media {
+    transform-origin: center center;
+    transform: scale(0.8);
+  }
+}
+
 /*# sourceMappingURL=landing.css.map */
