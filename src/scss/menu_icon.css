@@ -22,8 +22,9 @@
   width: 80px;
 }
 
-.burger {
+#plate2.burger > svg._yd_menu_svg {
   filter: url(#gooeyness);
+  -webkit-filter: url(#gooeyness);
 }
 
 .x {

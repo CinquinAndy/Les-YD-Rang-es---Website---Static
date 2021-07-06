@@ -991,7 +991,27 @@ h1 span {
 @media screen and (max-width: 1023px) {
   #_yd_btn_media {
     transform-origin: center center;
-    transform: scale(0.7);
+    transform: scale(0.7) translateX(-7%);
+  }
+
+  ._yd_block_media:hover ._yd_email {
+    transform-origin: center center;
+    transform: translateY(-3px) translateX(-81px);
+  }
+
+  ._yd_block_media:hover ._yd_facebook {
+    transform-origin: center center;
+    transform: translateY(-3px) translateX(51px);
+  }
+
+  ._yd_block_media:hover ._yd_instagram {
+    transform-origin: center center;
+    transform: translateY(58px) translateX(80px);
+  }
+
+  ._yd_block_media:hover ._yd_phone {
+    transform-origin: center center;
+    transform: translateY(58px) translateX(-110px);
   }
 
   ._yd_txt_around_image span {
