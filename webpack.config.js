@@ -1,26 +1,30 @@
 module.exports = {
-    entry: './src/js/main.js',
+    entry: {
+        main:"./src/js/main.js",
+        mainActivity:"./src/js/main_activity.js"
+    },
     output: {
-        path: __dirname + '/dist',
-        filename: 'bundle.js'
+        // eslint-disable-next-line no-undef
+        path: __dirname + "/dist",
+        filename: "[name].bundle.js"
     },
     module: {
         rules: [
             {
-                enforce: 'pre',
+                enforce: "pre",
                 test: /.js$/,
                 exclude: /node_modules/,
-                loader: 'eslint-loader'
+                loader: "eslint-loader"
             },
             {
                 test: /.m?js$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ["@babel/preset-env"]
                     }
                 }
             }]
     }
-}
+};

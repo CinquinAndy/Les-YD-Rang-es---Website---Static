@@ -1,0 +1,41 @@
+._yd_circle_top div::after {
+  position: absolute;
+  content: '';
+  background: #a96ce8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: center center;
+  transform: scale(1.03) translateX(-8px) translateY(-8px);
+  border-radius: 50%;
+}
+
+._yd_circle_middle div::after {
+  position: absolute;
+  content: '';
+  background: #69c2ec;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: center center;
+  transform: scale(1.03) translateX(5px) translateY(-20px);
+  border-radius: 50%;
+}
+
+._yd_circle_bot div::after {
+  position: absolute;
+  content: '';
+  background: #f84d7d;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: center center;
+  transform: scale(1.03) translateX(-8px) translateY(10px);
+  border-radius: 50%;
+}
