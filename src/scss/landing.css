@@ -991,7 +991,7 @@ h1 span {
 @media screen and (max-width: 1023px) {
   #_yd_btn_media {
     transform-origin: center center;
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 
   ._yd_txt_around_image span {
