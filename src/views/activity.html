@@ -11,11 +11,12 @@
                     Tout&nbsp;y&nbsp;déranger pour mieux tout&nbsp;y&nbsp;ranger
                 </h2>
             </div>
-            <div class="mt-10 w-full flex flex-col lg:hidden">
+            <div class="mt-10 w-full flex flex-col relative lg:hidden">
                 <div class="w-full flex">
                     <div class="_yd_circle_top rounded-full">
                         <div class="relative">
-                            <img class="h-36 w-36 object-cover object-center rounded-full" src="./images/1.png"
+                            <img class="max-w-max h-36 w-36 object-cover object-center rounded-full"
+                                 src="./images/1.png"
                                  alt="first">
                         </div>
                     </div>
@@ -23,7 +24,8 @@
                 <div class="w-full flex justify-end">
                     <div class="_yd_circle_bot rounded-full">
                         <div class="relative">
-                            <img class="h-40 w-40 object-cover object-center rounded-full" src="./images/3.png"
+                            <img class="max-w-max h-40 w-40 object-cover object-center rounded-full"
+                                 src="./images/3.png"
                                  alt="first">
                         </div>
                     </div>
@@ -31,7 +33,8 @@
                 <div class="absolute top top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div class="_yd_circle_middle rounded-full">
                         <div class="relative mt-20">
-                            <img class="h-40 w-40 object-cover object-center rounded-full" src="./images/2.png"
+                            <img class="max-w-max h-40 w-40 object-cover object-center rounded-full"
+                                 src="./images/2.png"
                                  alt="first">
                         </div>
                     </div>
@@ -48,7 +51,7 @@
                 </button>
             </div>
 
-            <div class="w-full flex justify-center items-center text-center flex-col text-yd_purple-400 text-lg font-bold mt-20">
+            <div class="w-full flex justify-center items-center text-center flex-col text-yd_purple-400 text-lg font-bold mt-20 lg:hidden">
                 <p>Voir nos dernières actus !</p>
                 <a class="arrowDown" href="#slider">
                     <img class="h-10 w-10 my-4" src="./images/arrowDown.svg" alt="arrowDown">
@@ -172,71 +175,223 @@
     <!--    Slider -->
     <div class="w-full flex justify-center items-center">
         <div>
-            <div id="primary-slider" class="splide lg:py-20">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="w-full h-full lg:px-16 lg:pt-10 lg:pb-32 lg:mb-10">
-                                <section class="shadow-lg rounded-xl grid grid-cols-1 lg:grid-cols-2">
-                                    <div class="flex lg:hidden justify-center items-center py-10">
-                                        <img class="object-cover object-center rounded-full border border-yd_purple-700 w-60 h-60"
-                                             src="./images/1.png">
-                                    </div>
-                                    <div class="mt-10 flex justify-start items-start flex-col text-yd_purple-700">
-                                        <h2 class="text-center font-bold text-3xl mb-5">Title</h2>
-                                        <!-- 800 char max -->
-                                        <p class="text-sm text-left mx-4">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                            nibh
-                                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-                                            enim ad
-                                            minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                                            ut
-                                        </p>
-                                        <div class="flex justify-center items-center mt-5 w-full">
-                                            <button class="rounded py-1 px-3 bg-yd_pink-600 text-yd_pink-50 uppercase text-sm">
-                                                Voir l'article
-                                            </button>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </li>
-                        <module href="/components/activity/in_slider/in_slider_2.html"></module>
-                        <module href="/components/activity/in_slider/in_slider_3.html"></module>
-                        <module href="/components/activity/in_slider/in_slider_4.html"></module>
-                        <module href="/components/activity/in_slider/in_slider_5.html"></module>
-                        <module href="/components/activity/in_slider/in_slider_6.html"></module>
-                        <module href="/components/activity/in_slider/in_slider_7.html"></module>
-                    </ul>
+            <!--            <div id="primary-slider" class="splide lg:py-20">-->
+            <!--                <div class="splide__track">-->
+            <!--                    <ul class="splide__list">-->
+            <!--                        <li class="splide__slide max-w-full">-->
+            <!--                            <div class="w-full h-full lg:px-16 lg:pt-10 lg:pb-32 lg:mb-10">-->
+            <!--                                <section class="shadow-lg rounded-xl grid grid-cols-1 lg:grid-cols-2">-->
+            <!--                                    <div class="flex lg:hidden justify-center items-center py-10">-->
+            <!--                                        <img class="object-cover object-center rounded-full border border-yd_purple-700 w-60 h-60"-->
+            <!--                                             src="./images/1.png">-->
+            <!--                                    </div>-->
+            <!--                                    <div class="mt-10 flex justify-start items-start flex-col text-yd_purple-700">-->
+            <!--                                        <h2 class="text-center font-bold text-3xl mb-5">Title</h2>-->
+            <!--                                        &lt;!&ndash; 800 char max &ndash;&gt;-->
+            <!--                                        <p class="text-sm text-left mx-4">-->
+            <!--                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy-->
+            <!--                                            nibh-->
+            <!--                                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi-->
+            <!--                                            enim ad-->
+            <!--                                            minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl-->
+            <!--                                            ut-->
+            <!--                                        </p>-->
+            <!--                                                    <div class="flex justify-center items-center mt-5 w-full">-->
+            <!--                                                        <button class="rounded py-1 px-3 bg-yd_pink-600 text-yd_pink-50 uppercase text-sm">-->
+            <!--                                                            Voir l'article-->
+            <!--                                                        </button>-->
+            <!--                                                    </div>-->
+            <!--                                    </div>-->
+            <!--                                </section>-->
+            <!--                            </div>-->
+            <!--                        </li>-->
+            <!--                        <module href="/components/activity/in_slider/in_slider_2.html"></module>-->
+            <!--                        <module href="/components/activity/in_slider/in_slider_3.html"></module>-->
+            <!--                        <module href="/components/activity/in_slider/in_slider_4.html"></module>-->
+            <!--                        <module href="/components/activity/in_slider/in_slider_5.html"></module>-->
+            <!--                        <module href="/components/activity/in_slider/in_slider_6.html"></module>-->
+            <!--                        <module href="/components/activity/in_slider/in_slider_7.html"></module>-->
+            <!--                    </ul>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            &lt;!&ndash; Second slider => Thumbnails &ndash;&gt;-->
+            <!--            <div id="secondary-slider" class="splide">-->
+            <!--                <div class="splide__track">-->
+            <!--                    <ul class="splide__list">-->
+            <!--                        <li class="splide__slide">-->
+            <!--                            <img src="./images/1.png">-->
+            <!--                        </li>-->
+            <!--                        <li class="splide__slide">-->
+            <!--                            <img src="./images/2.png">-->
+            <!--                        </li>-->
+            <!--                        <li class="splide__slide">-->
+            <!--                            <img src="./images/3.png">-->
+            <!--                        </li>-->
+            <!--                        <li class="splide__slide">-->
+            <!--                            <img src="./images/4.png">-->
+            <!--                        </li>-->
+            <!--                        <li class="splide__slide">-->
+            <!--                            <img src="./images/5.png">-->
+            <!--                        </li>-->
+            <!--                        <li class="splide__slide">-->
+            <!--                            <img src="./images/6.png">-->
+            <!--                        </li>-->
+            <!--                        <li class="splide__slide">-->
+            <!--                            <img src="./images/7.png">-->
+            <!--                        </li>-->
+            <!--                    </ul>-->
+            <!--                </div>-->
+            <!--            </div>-->
+
+            <div class="slider shadow-2xl rounded">
+                <input type="radio" name="slide_switch" id="id1" checked="checked"/>
+                <label for="id1">
+                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/1.png"
+                         alt="image_1"/>
+                </label>
+                <div class="_big flex justify-start items-center w-full h-full">
+                    <div class="w-1/3 block ml-2 lg:ml-10">
+                        <img class="border-2 border-yd_purple-700 rounded-full w-24 h-24 lg:h-48 lg:w-48 object-center object-cover"
+                             src="./images/1.png" alt="image_1"/>
+                    </div>
+                    <div class="flex flex-col justify-center lg:justify-start w-2/3 h-full p-2 lg:p-10 text-yd_purple-700">
+                        <h2 class="text-center font-bold text-lg lg:text-3xl mb-5">Title</h2>
+                        <!-- 500 char max -->
+                        <p class="text-xs lg:text-sm text-left mx-2 lg:mx-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad
+                            minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut
+                        </p>
+                        <div class="flex justify-center items-center mt-5 w-full">
+                            <button class="rounded py-1 px-3 bg-yd_pink-600 text-yd_pink-50 uppercase text-sm">
+                                Voir l'article
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- Second slider => Thumbnails -->
-            <div id="secondary-slider" class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="./images/1.png">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./images/2.png">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./images/3.png">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./images/4.png">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./images/5.png">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./images/6.png">
-                        </li>
-                        <li class="splide__slide">
-                            <img src="./images/7.png">
-                        </li>
-                    </ul>
+
+
+                <input type="radio" name="slide_switch" id="id2"/>
+                <label for="id2">
+                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/2.png"
+                         alt="image_2"/>
+                </label>
+                <div class="_big flex justify-start items-center w-full h-full">
+                    <div class="w-1/3 block ml-2 lg:ml-10">
+                        <img class="border-2 border-yd_purple-700 rounded-full w-24 h-24 lg:h-48 lg:w-48 object-center object-cover"
+                             src="./images/2.png" alt="image_2"/>
+                    </div>
+                    <div class="flex flex-col justify-center lg:justify-start w-2/3 h-full p-2 lg:p-10 text-yd_purple-700">
+                        <h2 class="text-center font-bold text-lg lg:text-3xl mb-5">Title</h2>
+                        <!-- 500 char max -->
+                        <p class="text-xs lg:text-sm text-left mx-2 lg:mx-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad
+                            minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut
+                        </p>
+                        <div class="flex justify-center items-center mt-5 w-full">
+                            <button class="rounded py-1 px-3 bg-yd_pink-600 text-yd_pink-50 uppercase text-sm">
+                                Voir l'article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <input type="radio" name="slide_switch" id="id3"/>
+                <label for="id3">
+                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/3.png"
+                         alt="image_3"/>
+                </label>
+                <div class="_big flex justify-start items-center w-full h-full">
+                    <div class="w-1/3 block ml-2 lg:ml-10">
+                        <img class="border-2 border-yd_purple-700 rounded-full w-24 h-24 lg:h-48 lg:w-48object-center object-cover"
+                             src="./images/3.png" alt="image_3"/>
+                    </div>
+                    <div class="flex flex-col justify-center lg:justify-start w-2/3 h-full p-2 lg:p-10 text-yd_purple-700">
+                        <h2 class="text-center font-bold text-lg lg:text-3xl mb-5">Title</h2>
+                        <!-- 500 char max -->
+                        <p class="text-xs lg:text-sm text-left mx-2 lg:mx-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad
+                            minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut
+                        </p>
+                        <div class="flex justify-center items-center mt-5 w-full">
+                            <button class="rounded py-1 px-3 bg-yd_pink-600 text-yd_pink-50 uppercase text-sm">
+                                Voir l'article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" name="slide_switch" id="id4"/>
+                <label for="id4">
+                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/4.png"
+                         alt="image_4"/>
+                </label>
+                <div class="_big flex justify-start items-center w-full h-full">
+                    <div class="w-1/3 block ml-2 lg:ml-10">
+                        <img class="border-2 border-yd_purple-700 rounded-full w-24 h-24 lg:h-48 lg:w-48 object-center object-cover"
+                             src="./images/4.png" alt="image_4"/>
+                    </div>
+                    <div class="flex flex-col justify-center lg:justify-start w-2/3 h-full p-2 lg:p-10 text-yd_purple-700">
+                        <h2 class="text-center font-bold text-lg lg:text-3xl mb-5">Title</h2>
+                        <!-- 500 char max -->
+                        <p class="text-xs lg:text-sm text-left mx-2 lg:mx-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad
+                            minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut
+                        </p>
+                        <div class="flex justify-center items-center mt-5 w-full">
+                            <button class="rounded py-1 px-3 bg-yd_pink-600 text-yd_pink-50 uppercase text-sm">
+                                Voir l'article
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="radio" name="slide_switch" id="id5"/>
+                <label for="id5">
+                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/5.png"
+                         alt="image_5"/>
+                </label>
+                <div class="_big flex justify-start items-center w-full h-full">
+                    <div class="w-1/3 block ml-2 lg:ml-10">
+
+                        <img class="border-2 border-yd_purple-700 rounded-full w-24 h-24 lg:h-48 lg:w-48 object-center object-cover"
+                             src="./images/5.png" alt="image_5"/>
+                    </div>
+                    <div class="flex flex-col justify-center lg:justify-start w-2/3 h-full p-2 lg:p-10 text-yd_purple-700">
+                        <h2 class="text-center font-bold text-lg lg:text-3xl mb-5">Title</h2>
+                        <!-- 500 char max -->
+                        <p class="text-xs lg:text-sm text-left mx-2 lg:mx-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad
+                            minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                            ut
+                            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad
+                        </p>
+                        <div class="flex justify-center items-center mt-5 w-full">
+                            <button class="rounded py-1 px-3 bg-yd_pink-600 text-yd_pink-50 uppercase text-sm">
+                                Voir l'article
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,59 @@
+.slider {
+  width: 640px; /*Same as width of the large image*/
+  position: relative;
+  /*Instead of height we will use padding*/
+  padding-top: 320px; /*That helps bring the labels down*/
+  margin: 100px auto;
+}
+
+.slider > ._big {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+  display: none;
+}
+
+.slider label {
+  margin: 18px 0 0 18px;
+  float: left;
+  cursor: pointer;
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0.6;
+}
+
+.slider label img {
+  display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked + label {
+  border: 3px solid;
+  border-image: -webkit-linear-gradient(#842de1, #27aae7) 3 stretch;
+  opacity: 1;
+}
+
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ ._big {
+  opacity: 0;
+}
+
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked + label + ._big {
+  opacity: 1;
+}
+
+@media only screen and (max-width:768px){
+  .slider {
+    width: 310px; /*Same as width of the large image*/
+    position: relative;
+    padding-top: 310px;
+    margin: 100px auto;
+  }
+}
