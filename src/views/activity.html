@@ -42,18 +42,18 @@
             </div>
             <div class="w-full flex flex-col justify-center items-center lg:justify-start lg:flex-row mt-20">
                 <div class="w-full mb-3 lg:pl-10 lg:w-1/3 lg:m-0">
-                    <p class="text-yd_blue-400 text-lg text-center lg:text-xl">
+                    <p class="text-yd_blue-400 text-lg text-center lg:text-left lg:text-xl">
                         Venez découvrir ce que nous pouvons apporter à votre quotidien&nbsp;!
                     </p>
                 </div>
-                <button class="text-yd_pink-50 uppercase bg-yd_pink-600 m-0 py-2 px-2 text-sm lg:mr-10 rounded-xl lg:py-3 lg:px-5 lg:text-lg">
+                <button class="text-yd_pink-50 uppercase bg-yd_pink-600 m-0 py-2 px-2 text-sm lg:ml-10 rounded-xl lg:py-3 lg:px-5 lg:text-lg">
                     contactez-nous !
                 </button>
             </div>
 
             <div class="w-full flex justify-center items-center text-center flex-col text-yd_purple-400 text-lg font-bold mt-20 lg:hidden">
                 <p>Voir nos dernières actus !</p>
-                <a class="arrowDown" href="#slider">
+                <a class="arrowDown" href="#slider-phone">
                     <img class="h-10 w-10 my-4" src="./images/arrowDown.svg" alt="arrowDown">
                 </a>
             </div>
@@ -93,7 +93,7 @@
     <div class="w-full h-full lg:pr-40 flex justify-center items-start lg:row-span-1 lg:col-span-1 lg:row-start-1 lg:col-start-2">
         <div>
             <div class="w-full">
-                <h2 class="_yd-gradient-textcolor-600 w-full text-right text-2xl lg:text-7xl leading-tight font-bold uppercase">
+                <h2 class="_yd-gradient-textcolor-400-alt w-full text-right text-2xl lg:text-7xl leading-tight font-bold uppercase">
                     Que&nbsp;faisons&nbsp;-&nbsp;nous pour vous&nbsp;?
                 </h2>
             </div>
@@ -154,6 +154,7 @@
             </div>
         </div>
     </div>
+
     <div id="_yd-filled-box" class="hidden lg:block relative h-full w-full">
         <div class="relative"></div>
         <div class="relative"></div>
@@ -173,12 +174,13 @@
         <hr class="w-1/2 lg:w-1/3 border-yd_pink-500 border">
     </div>
     <!--    Slider -->
-    <div class="w-full flex justify-center items-center">
+    <div id="slider-phone" class="w-full flex justify-center items-center">
         <div>
-            <div class="slider shadow-2xl rounded">
+            <div class="slider mt-10 shadow-2xl rounded relative">
+                <!--                first image -->
                 <input type="radio" name="slide_switch" id="id1" checked="checked"/>
                 <label for="id1">
-                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/1.png"
+                    <img class="h-40px lg:h-50px w-35px lg:w-100px object-cover object-center" src="./images/1.png"
                          alt="image_1"/>
                 </label>
                 <div class="_big flex justify-start items-center w-full h-full">
@@ -204,10 +206,10 @@
                         </div>
                     </div>
                 </div>
-
+                <!--                second image -->
                 <input type="radio" name="slide_switch" id="id2"/>
                 <label for="id2">
-                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/2.png"
+                    <img class="h-40px lg:h-50px w-35px lg:w-100px object-cover object-center" src="./images/2.png"
                          alt="image_2"/>
                 </label>
                 <div class="_big flex justify-start items-center w-full h-full">
@@ -233,16 +235,15 @@
                         </div>
                     </div>
                 </div>
-
-
+                <!--                third image -->
                 <input type="radio" name="slide_switch" id="id3"/>
                 <label for="id3">
-                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/3.png"
+                    <img class="h-40px lg:h-50px w-35px lg:w-100px object-cover object-center" src="./images/3.png"
                          alt="image_3"/>
                 </label>
                 <div class="_big flex justify-start items-center w-full h-full">
                     <div class="w-1/3 block ml-2 lg:ml-10">
-                        <img class="border-2 border-yd_purple-700 rounded-full w-24 h-24 lg:h-48 lg:w-48object-center object-cover"
+                        <img class="border-2 border-yd_purple-700 rounded-full w-24 h-24 lg:h-48 lg:w-48 object-center object-cover"
                              src="./images/3.png" alt="image_3"/>
                     </div>
                     <div class="flex flex-col justify-center lg:justify-start w-2/3 h-full p-2 lg:p-10 text-yd_purple-700">
@@ -263,10 +264,10 @@
                         </div>
                     </div>
                 </div>
-
+                <!--                fourth image -->
                 <input type="radio" name="slide_switch" id="id4"/>
                 <label for="id4">
-                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/4.png"
+                    <img class="h-40px lg:h-50px w-35px lg:w-100px object-cover object-center" src="./images/4.png"
                          alt="image_4"/>
                 </label>
                 <div class="_big flex justify-start items-center w-full h-full">
@@ -292,10 +293,10 @@
                         </div>
                     </div>
                 </div>
-
+                <!--                fifth image -->
                 <input type="radio" name="slide_switch" id="id5"/>
                 <label for="id5">
-                    <img class="h-50px w-40px lg:w-100px object-cover object-center" src="./images/5.png"
+                    <img class="h-40px lg:h-50px w-35px lg:w-100px object-cover object-center" src="./images/5.png"
                          alt="image_5"/>
                 </label>
                 <div class="_big flex justify-start items-center w-full h-full">
@@ -324,6 +325,15 @@
                         </div>
                     </div>
                 </div>
+
+                <button id="_btn_arrow_right"
+                        class="_btn_arrow_left absolute bottom-0 -left-0 transform translate-y-65px -translate-x-10px scale-75 lg:-translate-x-35px flex justify-center items-center">
+                    <img class="w-10 h-10" src="./images/arrowLeft.svg" alt="arrow left">
+                </button>
+                <button id="_btn_arrow_left"
+                        class="_btn_arrow_right absolute bottom-0 right-0 transform translate-y-65px translate-x-10px scale-75 lg:translate-x-30px flex justify-center items-center">
+                    <img class="w-10 h-10" src="./images/arrowRight.svg" alt="arrow right">
+                </button>
             </div>
         </div>
     </div>

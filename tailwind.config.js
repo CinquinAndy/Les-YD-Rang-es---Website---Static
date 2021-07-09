@@ -59,11 +59,14 @@ module.exports = {
         extend: {
             spacing: {
                 "10px": "10px",
+                "15px": "15px",
                 "20px": "20px",
                 "30px": "30px",
+                "35px": "35px",
                 "40px": "40px",
                 "50px": "50px",
                 "60px": "60px",
+                "65px": "65px",
                 "70px": "70px",
                 "80px": "80px",
                 "90px": "90px",

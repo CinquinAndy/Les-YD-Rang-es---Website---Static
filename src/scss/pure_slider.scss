@@ -3,7 +3,6 @@
   position: relative;
   /*Instead of height we will use padding*/
   padding-top: 320px; /*That helps bring the labels down*/
-  margin: 100px auto;
 }
 
 .slider > ._big {
@@ -18,7 +17,7 @@
 }
 
 .slider label {
-  margin: 18px 0 0 18px;
+  margin: 20px 0 0 22px;
   float: left;
   cursor: pointer;
   transition: opacity ease-in-out 0.3s;
@@ -31,8 +30,8 @@
 
 /*Time to add the click effects*/
 .slider input[name='slide_switch']:checked + label {
-  border: 3px solid;
-  border-image: -webkit-linear-gradient(#842de1, #27aae7) 3 stretch;
+  border: 2px solid;
+  border-image: -webkit-linear-gradient(#842de1, #27aae7) 2 stretch;
   opacity: 1;
 }
 
@@ -49,11 +48,41 @@ On click the images will be displayed at normal size to complete the effect
   opacity: 1;
 }
 
-@media only screen and (max-width:768px){
+._btn_arrow_left {
+  outline: none;
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}
+
+._btn_arrow_right {
+  outline: none;
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider label {
+    margin: 22px 0 0 12px;
+    float: left;
+    cursor: pointer;
+    transition: opacity ease-in-out 0.3s;
+    opacity: 0.6;
+  }
+  #id1 + label {
+    margin: 22px 0 0 44px;
+    float: left;
+    cursor: pointer;
+    transition: opacity ease-in-out 0.3s;
+    opacity: 0.6;
+  }
+
   .slider {
     width: 310px; /*Same as width of the large image*/
     position: relative;
     padding-top: 310px;
-    margin: 100px auto;
   }
 }
