@@ -1,7 +1,11 @@
+// eslint-disable-next-line no-undef
 module.exports = {
     entry: {
         main:"./src/js/main.js",
-        mainActivity:"./src/js/main_activity.js"
+        mainActivity:"./src/js/main_activity.js",
+        mainBlog:"./src/js/main_blog.js",
+        mainPrestation:"./src/js/main_prestation.js",
+        mainContact:"./src/js/main_contact.js",
     },
     output: {
         // eslint-disable-next-line no-undef
