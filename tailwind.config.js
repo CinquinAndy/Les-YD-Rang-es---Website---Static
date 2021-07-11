@@ -77,6 +77,7 @@ module.exports = {
                 "500px": "500px",
                 "25vw": "25vw",
                 "40vw": "40vw",
+                "80vw": "80vw",
             },
         },
     },

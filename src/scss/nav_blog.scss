@@ -23,18 +23,18 @@ nav.scrolled ._logo {
   display: inline;
 }
 
-nav * {
+.nav * {
   color: #0d2835;
   transition: all ease-in-out .3s;
 }
 
-nav a:hover,
-nav a:hover * {
+.nav a:hover,
+.nav a:hover * {
   color: #020a0d;
   fill: #020a0d;
 }
 
-#navLinks a._yd_not_active::after {
+.nav #navLinks a._yd_not_active::after {
   position: absolute;
   content: '';
   bottom: -5px;
@@ -48,16 +48,16 @@ nav a:hover * {
   z-index: 40;
 }
 
-#navLinks a:hover::after {
+.nav #navLinks a:hover::after {
   opacity: 1;
   transform: scale(1);
 }
 
-._yd_active {
+.nav ._yd_active {
   padding: 10px;
 }
 
-._yd_active::after {
+.nav ._yd_active::after {
   position: absolute;
   content: '';
   mask: url("./images/arabesque.svg") center center;
@@ -77,7 +77,7 @@ nav a:hover * {
   opacity: 0;
 }
 
-._yd_active:hover:after {
+.nav ._yd_active:hover:after {
   background-color: #020a0d;
   opacity: 1;
 }
@@ -101,7 +101,7 @@ nav a:hover * {
   fill: #75d3ff;
 }
 
-.nav.scrolled #navLinks a._yd_not_active::after {
+.nav.scrolled #navLinks a._yd_not_active:after {
   position: absolute;
   content: '';
   bottom: -5px;
@@ -115,7 +115,12 @@ nav a:hover * {
   z-index: 40;
 }
 
-.nav.scrolled ._yd_active::after {
+.nav.scrolled #navLinks a:hover:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav.scrolled #navLinks a._yd_active::after {
   position: absolute;
   content: '';
   mask: url("./images/arabesque.svg") center center;
@@ -135,7 +140,7 @@ nav a:hover * {
   opacity: 0;
 }
 
-.nav.scrolled ._yd_active:hover:after {
+.nav.scrolled #navLinks ._yd_active:hover:after {
   background-color: #75d3ff;
   opacity: 1;
 }

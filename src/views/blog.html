@@ -4,14 +4,19 @@
 <module href="/components/blog/nav_blog.html"></module>
 
 <!-- slider -->
-<section id="articles" class="w-full md:px-40 py-40 grid grid-cols-12 z-10">
-    <div class="col-start-4 col-end-12 grid grid-cols-3 bg-yd_pink-50 rounded-2xl shadow-xl relative mt-20 z-10">
-        <img class="_yd_image_article max-w-max absolute top-0 left-0 w-25vw h-25vw object-center object-cover rounded-full shadow-2xl" src="./images/1.png"
+<section id="articles" class="w-full md:px-40 py-10 lg:py-40 grid grid-cols-1 lg:grid-cols-12 z-10 px-4 relative">
+    <div class="lg:col-start-4 lg:col-end-12 grid grid-cols-1 lg:grid-cols-3 bg-yd_pink-50 rounded-2xl shadow-xl relative mt-20 z-10">
+        <img class="hidden lg:block _yd_image_article max-w-max lg:absolute lg:top-0 lg:left-0 w-25vw h-25vw object-center object-cover rounded-full shadow-2xl"
+             src="./images/1.png"
              alt="image article 1">
-        <div class="col-start-2 col-span-2 rounded-2xl">
-            <!--            -->
-            <div class="p-10">
-                <h1 class="text-3xl font-bold text-center pb-20">Organisation des placards</h1>
+        <div class="lg:col-start-2 lg:col-span-2 rounded-2xl _yd-center-justified">
+            <div class="p-4 lg:p-10">
+                <h1 class="text-2xl font-bold text-center pb-6 lg:pb-20">Organisation des placards</h1>
+                <div class="w-full flex lg:hidden justify-center items-center">
+                    <img class="max-w-max w-80vw h-80vw object-center object-cover rounded-full shadow-2xl mb-6"
+                         src="./images/1.png"
+                         alt="image article 1">
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                     tincidunt ut
@@ -107,20 +112,20 @@
             </div>
         </div>
     </div>
+    <div id="yd_rect" class="absolute w-full h-full top-0 left-0 z-0 flex justify-center items-center">
+        <!--    Top rect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <!--    Bot rect -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </section>
 
-<!-- todo block background-->
-<div id="yd_rect" class="absolute w-full h-full top-0 left-0 z-0 flex justify-center items-center">
-<!--    Top rect -->
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-<!--    Bot rect -->
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
+
 <module href="/components/blog/footer_blog.html"></module>
 
