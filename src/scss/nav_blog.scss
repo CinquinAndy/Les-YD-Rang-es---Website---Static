@@ -24,7 +24,7 @@ nav.scrolled ._logo {
 }
 
 .nav * {
-  color: #0d2835;
+  color: #dbf4ff;
   transition: all ease-in-out .3s;
 }
 
@@ -85,6 +85,10 @@ nav.scrolled ._logo {
 @media screen and (min-width: 1024px) {
   .nav {
     height: 100px;
+  }
+  .nav * {
+    color: #0d2835;
+    transition: all ease-in-out .3s;
   }
 }
 
