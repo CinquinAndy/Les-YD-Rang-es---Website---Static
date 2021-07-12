@@ -3,6 +3,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+._yd-gradient-textColor-adjust-on-logo-alt {
+  background: -webkit-linear-gradient(left, #6a11cb, #27aae7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+._yd-gradient-textColor-adjust-on-logo-alt-brightness {
+  background: -webkit-linear-gradient(left, #665199, #37b3eb);
+  font-family: Playfair Display SC Bold, serif;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px #020a0d);
+}
 
 // 50 -> gradient
 ._yd-gradient-textcolor-50 {
