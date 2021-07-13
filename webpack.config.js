@@ -6,6 +6,7 @@ module.exports = {
         mainBlog:"./src/js/main_blog.js",
         mainPrestation:"./src/js/main_prestation.js",
         mainContact:"./src/js/main_contact.js",
+        mainMentionsLegales:"./src/js/main_mentions_legales.js",
     },
     output: {
         // eslint-disable-next-line no-undef

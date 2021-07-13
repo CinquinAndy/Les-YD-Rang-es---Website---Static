@@ -35,12 +35,14 @@
   border: 2px solid;
   border-image: -webkit-linear-gradient(#842de1, #27aae7) 2 stretch;
   opacity: 1;
+  z-index: 10;
 }
 
 /*Clicking any thumbnail now should change its opacity(style)*/
 /*Time to work on the main images*/
 .slider input[name=slide_switch] ~ ._big {
   opacity: 0;
+  z-index: -10;
 }
 
 /*That hides all main images at a 110% size
@@ -48,6 +50,7 @@ On click the images will be displayed at normal size to complete the effect
 */
 .slider input[name=slide_switch]:checked + label + ._big {
   opacity: 1;
+  z-index: 10;
 }
 
 ._btn_arrow_left {
