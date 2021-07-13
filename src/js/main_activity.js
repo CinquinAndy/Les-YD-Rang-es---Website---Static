@@ -1,3 +1,5 @@
+import AOS from "aos";
+
 let menuIcon = document.getElementById("plate2");
 let navLinks = document.getElementById("navLinks");
 let _btn_arrow_left = document.getElementById("_btn_arrow_left");
@@ -40,3 +42,10 @@ _btn_arrow_left.addEventListener("click",function(){
         slide[compteur-1].checked = true;
     }
 });
+
+
+window.onload = () => {
+    AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+    });
+};

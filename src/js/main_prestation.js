@@ -1,3 +1,5 @@
+import AOS from "aos";
+
 let menuIcon = document.getElementById("plate2");
 let navLinks = document.getElementById("navLinks");
 let nav = document.getElementById("nav");
@@ -26,3 +28,9 @@ function scrollFunction() {
         }
     }
 }
+
+window.onload = () => {
+    AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+    });
+};
