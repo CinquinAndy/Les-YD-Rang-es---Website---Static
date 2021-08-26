@@ -88,6 +88,7 @@ module.exports = {
                 "500px": "500px",
                 "25vw": "25vw",
                 "40vw": "40vw",
+                "60vw": "60vw",
                 "80vw": "80vw",
                 "80vh": "80vh",
                 "90vh": "90vh",
