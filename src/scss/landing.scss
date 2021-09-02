@@ -204,7 +204,7 @@ h1 span {
   transform: translateX(240px) translateY(-550px);
 }
 
-@for $i from 1 through 36 {
+@for $i from 1 through 60 {
   ._yd_txt_around_image span:nth-child(#{$i}) {
     transform: rotate(50 + 360deg/72 * $i) scale(-1, -1);
   }
